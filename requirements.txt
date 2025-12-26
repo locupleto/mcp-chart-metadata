@@ -1,0 +1,6 @@
+mcp>=1.0.0
+
+# Trading-lab dependencies (required for study/strategy discovery)
+streamlit>=1.52.0
+pandas>=2.3.0
+numpy>=2.4.0
