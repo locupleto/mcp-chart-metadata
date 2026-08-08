@@ -29,12 +29,12 @@ else:
 sys.path.insert(0, str(TRADING_LAB_PATH))
 print(f"[chart-metadata] Using TRADING_LAB_PATH: {TRADING_LAB_PATH}", file=sys.stderr)
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 from typing import List, Dict, Optional, Tuple
 import difflib
 
-# Initialize FastMCP server
-mcp = FastMCP("chart-metadata")
+# Initialize the high-level MCP server (named FastMCP before SDK 2.0)
+mcp = MCPServer("chart-metadata", version="1.0.0")
 
 
 def get_studies() -> Dict[str, str]:

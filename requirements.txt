@@ -1,4 +1,4 @@
-mcp>=1.0.0
+mcp>=2,<3
 
 # Trading-lab dependencies (required for study/strategy discovery)
 streamlit>=1.52.0
